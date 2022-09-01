@@ -36,7 +36,7 @@ fun HomeScreen(
                     )
                 )
             },
-            text = "Home",
+            text = "This is Home Screen",
             style = MaterialTheme.typography.headlineSmall,
             fontWeight = FontWeight.Bold
         )
@@ -46,7 +46,7 @@ fun HomeScreen(
                 .clickable {
                     navController.navigate(AUTH_GRAPH_ROUTE)
                 },
-            text = "Login/Sign Up",
+            text = "Logout",
             style = MaterialTheme.typography.headlineSmall,
             fontWeight = FontWeight.Medium
         )

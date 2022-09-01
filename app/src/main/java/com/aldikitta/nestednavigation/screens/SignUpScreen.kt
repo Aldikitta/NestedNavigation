@@ -27,7 +27,7 @@ fun SignUpScreen(
             modifier = Modifier.clickable {
                 navController.popBackStack()
             },
-            text = "Sign Up",
+            text = "This is Sign Up screen",
             color = Color.Green,
             style = MaterialTheme.typography.headlineSmall,
             fontWeight = FontWeight.Bold

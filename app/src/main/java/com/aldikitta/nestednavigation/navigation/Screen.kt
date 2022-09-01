@@ -8,6 +8,8 @@ const val AUTH_GRAPH_ROUTE = "auth"
 const val HOME_GRAPH_ROUTE = "home"
 
 sealed class Screen(val route: String) {
+    object Login: Screen(route = "login_screen")
+    object SignUp: Screen(route = "sign_up_screen")
     object Home : Screen(route = "home_screen")
     object Detail : Screen(route = "detail_screen?id={id}&name={name}") {
         fun passNameAndId(
@@ -17,6 +19,5 @@ sealed class Screen(val route: String) {
             return "detail_screen?id=$id&name=$name"
         }
     }
-    object Login: Screen(route = "login_screen")
-    object SignUp: Screen(route = "sign_up_screen")
+
 }

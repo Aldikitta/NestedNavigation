@@ -31,7 +31,7 @@ fun LoginScreen(
             modifier = Modifier.clickable {
                 navController.navigate(route = Screen.SignUp.route)
             },
-            text = "Login",
+            text = "This is login screen",
             color = Color.Magenta,
             style = MaterialTheme.typography.headlineSmall,
             fontWeight = FontWeight.Bold
@@ -41,9 +41,9 @@ fun LoginScreen(
                 .padding(top = 150.dp)
                 .clickable {
                     navController.popBackStack()
-                    navController.navigate(Screen.Detail.passNameAndId())
+                    navController.navigate(Screen.Home.route)
                 },
-            text = "Open Detail Screen",
+            text = "Take me to home screen",
             style = MaterialTheme.typography.headlineSmall,
             fontWeight = FontWeight.Medium
         )

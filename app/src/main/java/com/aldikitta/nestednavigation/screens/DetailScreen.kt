@@ -31,7 +31,7 @@ fun DetailScreen(
                     }
                 }
             },
-            text = "Detail",
+            text = "This is Detail screen",
             color = Color.Red,
             style = MaterialTheme.typography.headlineSmall,
             fontWeight = FontWeight.Bold
